@@ -1,3 +1,5 @@
+require 'securerandom'
+
 require_relative './../lib/db'
 require_relative './../lib/producer'
 
