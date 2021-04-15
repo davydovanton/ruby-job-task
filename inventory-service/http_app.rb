@@ -28,9 +28,9 @@ class HttpApp < Hanami::API
       end
     end
 
-    put "/items/toggle_status/:item_id" do
+    put "/items/:id/toggle_status" do
       command = Items::Commands::ToggleStatus.new
-      command.call(id: params[:item_id])
+      command.call(id: params[:id])
 
       json(:ok)
     end
