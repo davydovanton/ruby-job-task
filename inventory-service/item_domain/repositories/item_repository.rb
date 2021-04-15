@@ -7,7 +7,7 @@ class ItemRepository
   end
 
   def all
-    relation.where(active: true).to_a
+    relation.to_a
   end
 
   def create(name:, price:)
